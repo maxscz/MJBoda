@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+Template Name: Nocobot
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: c -->
+
+<head>
+  <title>M&J's Wedding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body id="top">
+  <style>
+    /*body{
+        background-image: url('images/M&JInvierno.jpg');
+        
+    }*/
+    @font-face {
+      font-family: AmellindaWeddings;
+      src: url('fonts/amellinda_weddings/Amellinda\ Weddings.otf');
+    }
+
+    div {
+      font-family: AmellindaWeddings;
+      font-size: 130%;
+      text-align: center;
+      color: bisque;
+    }
+
+    @font-face {
+      font-family: Mont;
+      src: url('fonts/mont/Mont-HeavyDEMO.otf');
+    }
+
+    p {
+      color: white;
+      font-family: Mont;
+      font-size: 160%;
+      text-align: center;
+    }
+  </style>
+  <!-- <div class="wrapper row0"> -->
+    <div id="topbar" class="hoc clear">
+      <div class="fl_left">
+      </div>
+    </div>
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded" style="background-image:url('images/M&JInvierno.jpg');">
+      <!-- ################################################################################################ -->
+      <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+          <div id="logo" class="fl_left">
+          </div>
+        </header>
+      </div>
+      <div class="overlay">
+        <div id="pageintro" class="hoc clear">
+          Maryana Y Jorge
+        </div>
+        
+      </div>
+      <p id="demo"></p>
+      <!-- ################################################################################################ -->
+    </div>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Apr 23, 2022 17:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+    <!-- End Top Background Image Wrapper -->
+    <div class="wrapper row3">
+      <main class="hoc container clear">
+        <!-- main body -->
+        <!-- ################################################################################################ -->
+        <section id="introblocks">
+          <ul class="nospace group btmspace-80">
+            <li class="one_third first">
+              <figure><img src="images/M&JMarryMeSQuare.jpg">
+                <figcaption>
+                  <h6 class="heading">Pon el mouse encima</h6>
+                  <div>
+                    <p>Hola</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><img src="images/M&JRingSquare.jpg" alt="">
+                <figcaption>
+                  <h6 class="heading">Pon el mouse encima</h6>
+                  <div>
+                    <p>Maryana y Jorge</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><img src="images/Maryana&JorgeAbrazoSquare.jpg" alt="">
+                <figcaption>
+                  <h6 class="heading">Pon el mouse encima</h6>
+                  <div>
+                    <p>Los quiero</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- ################################################################################################ -->
+        <hr class="btmspace-80">
+        <!-- ################################################################################################ -->
+        <section class="group">
+          <div class="one_half first"><img class="inspace-15 borderedbox" src="images/M&JSentadosInvierno.PNG" alt="">
+          </div>
+          <div class="one_half">
+            <ul class="nospace group inspace-15">
+              <li class="one_half first btmspace-50">
+                <article>
+                  <h6 class="heading"><a href="#">Fecha</a></h6>
+                  <p class="nospace">15 de Septiembre</p>
+                </article>
+              </li>
+              <li class="one_half btmspace-50">
+                <article>
+                  <h6 class="heading"><a href="#">Lugar</a></h6>
+                  <p class="nospace">Mi casa</p>
+                </article>
+              </li>
+              <li class="one_half first">
+                <article>
+                  <h6 class="heading"><a href="#">Habra comida</a></h6>
+                  <p class="nospace">y mucha pero mucha buleria buleria</p>
+                </article>
+              </li>
+              <li class="one_half">
+                <article>
+                  <h6 class="heading"><a href="#">Invitado de honor:</a></h6>
+                  <p class="nospace">Copito</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- ################################################################################################ -->
+        <!-- / main body -->
+        <div class="clear"></div>
+      </main>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div style="background-color:#9D7982">
+      <figure class="hoc container clear imgroup">
+        <!-- ################################################################################################ -->
+        <figcaption class="sectiontitle">
+          <p class="nospace font-xs"></p>
+          <p class="heading underline font-x2">Aqui pueden ir fotos de su sesion</p>
+        </figcaption>
+        <ul class="nospace group">
+          <li class="one_third"><img src="images/M&JSelfi.PNG" alt=""></li>
+          <li class="one_third"><img src="images/M&JsesionSentados.PNG" alt=""></li>
+          <li class="one_third"><a class="imgover" href="#"><img src="images/M&JGlobosHorizontal.png" alt=""></a></li>
+          <!--li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li>
+      <li class="one_third"><a class="imgover" href="#"><img src="images/demo/348x261.png" alt=""></a></li-->
+        </ul>
+        <!-- ################################################################################################ -->
+      </figure>
+      <!-- ################################################################################################ -->
+      </section>
+    </div>
+
+    <div class="wrapper coloured">
+      <section id="ctdetails" class="hoc clear">
+        <!-- ################################################################################################ -->
+        <ul class="nospace clear">
+          <li class="one_quarter first">
+            <div class="block clear"><a href="https://wa.link/kdwj67"><i class="fas fa-phone"></i></a>
+              <span><strong>Confirmame!</strong> +52 8120389636</span>
+            </div>
+          </li>
+          <!--li class="one_quarter">
+        <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> support@domain.com</span></div>
+      </li-->
+          <li class="one_quarter">
+            <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Monday -
+                  Saturday:</strong> 08.00am - 18.00pm</span></div>
+          </li>
+          <li class="one_quarter">
+            <div class="block clear"><a
+                href="https://www.google.com.mx/maps/place/Faustino+Lizarraga,+Residencial+las+Puentes,+66460+San+Nicol%C3%A1s+de+los+Garza,+N.L./@25.7357394,-100.2813361,17z/data=!3m1!4b1!4m5!3m4!1s0x866294dcd644b8cd:0x410a8a6e009e8a68!8m2!3d25.7357346!4d-100.2791474?hl=es&authuser=0"><i
+                  class="fas fa-map-marker-alt"></i></a> <span><strong>Mi casa:</strong> Directions to <a
+                  href="https://www.google.com.mx/maps/place/Faustino+Lizarraga,+Residencial+las+Puentes,+66460+San+Nicol%C3%A1s+de+los+Garza,+N.L./@25.7357394,-100.2813361,17z/data=!3m1!4b1!4m5!3m4!1s0x866294dcd644b8cd:0x410a8a6e009e8a68!8m2!3d25.7357346!4d-100.2791474?hl=es&authuser=0">our
+                  location</a></span></div>
+          </li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </section>
+    </div>
+    <div class="wrapper row5">
+    </div>
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+
+</html>
